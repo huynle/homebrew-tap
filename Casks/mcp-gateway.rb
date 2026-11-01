@@ -5,27 +5,27 @@ cask "mcp-gateway" do
   on_macos do
     on_arm do
       sha256 "eed54998250bf54622ad693c37df8a800a42e5b21045735251046cd43c4c4fe5"
-      url "https://github.com/huynle/mcp-gateway/releases/download/v#{version}/mcp-gateway_darwin_arm64.tar.gz"
+      url "https://github.com/huynle/mcp-gateway-releases/releases/download/v#{version}/mcp-gateway_darwin_arm64.tar.gz"
     end
     on_intel do
       sha256 "50b0cd104dba493e5ec09b7fc1645f5a7b56b89a4951c4a88b1438c08e45fe77"
-      url "https://github.com/huynle/mcp-gateway/releases/download/v#{version}/mcp-gateway_darwin_amd64.tar.gz"
+      url "https://github.com/huynle/mcp-gateway-releases/releases/download/v#{version}/mcp-gateway_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
       sha256 "2c66f9784b9dc50465be8883e0dfe751799ea3f4a5cd6d3b3685148e0171edc5"
-      url "https://github.com/huynle/mcp-gateway/releases/download/v#{version}/mcp-gateway_linux_arm64.tar.gz"
+      url "https://github.com/huynle/mcp-gateway-releases/releases/download/v#{version}/mcp-gateway_linux_arm64.tar.gz"
     end
     on_intel do
       sha256 "aad82536050b1c31e0430bd6455e38387ac5ab9fda812903b0ba07ce8aaf86fc"
-      url "https://github.com/huynle/mcp-gateway/releases/download/v#{version}/mcp-gateway_linux_amd64.tar.gz"
+      url "https://github.com/huynle/mcp-gateway-releases/releases/download/v#{version}/mcp-gateway_linux_amd64.tar.gz"
     end
   end
 
   name "mcp-gateway"
   desc "Client CLI for MCP gateway (connect local stdio MCP servers through a tunnel)"
-  homepage "https://github.com/huynle/mcp-gateway"
+  homepage "https://github.com/huynle/mcp-gateway-releases"
 
   livecheck do
     skip "Auto-generated on release."
